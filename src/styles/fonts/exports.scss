@@ -1,0 +1,23 @@
+@import 'vars';
+@import 'mixins';
+
+@font-face {
+  font-family: EncodeSansWide;
+  font-weight: $font-weight-regular;
+  src: url('#{$fonts-root}/EncodeSansWide-Regular-webfont.eot');
+  src: url('#{$fonts-root}/EncodeSansWide-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('#{$fonts-root}/EncodeSansWide-Regular-webfont.woff2') format('woff2'), url('#{$fonts-root}/EncodeSansWide-Regular-webfont.woff') format('woff'), url('#{$fonts-root}/EncodeSansWide-Regular-webfont.ttf')  format('truetype'), url('#{$fonts-root}/EncodeSansWide-Regular-webfont.svg#encode_sans_wideregular') format('svg');
+}
+
+@font-face {
+  font-family: EncodeSansWide;
+  font-weight: $font-weight-semi-bold;
+  src: url('#{$fonts-root}/EncodeSansWide-Bold-webfont.eot');
+  src: url('#{$fonts-root}/EncodeSansWide-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('#{$fonts-root}/EncodeSansWide-Bold-webfont.woff2') format('woff2'), url('#{$fonts-root}/EncodeSansWide-Bold-webfont.woff') format('woff'), url('#{$fonts-root}/EncodeSansWide-Bold-webfont.ttf')  format('truetype'), url('#{$fonts-root}/EncodeSansWide-Bold-webfont.svg#encode_sans_widesemibold') format('svg');
+}
+
+@font-face {
+  font-family: EncodeSansWide;
+  font-weight: $font-weight-bold;
+  src: url('#{$fonts-root}/EncodeSansWide-SemiBold-webfont.eot');
+  src: url('#{$fonts-root}/EncodeSansWide-SemiBold-webfont.eot?#iefix') format('embedded-opentype'), url('#{$fonts-root}/EncodeSansWide-SemiBold-webfont.woff2') format('woff2'), url('#{$fonts-root}/EncodeSansWide-SemiBold-webfont.woff') format('woff'), url('#{$fonts-root}/EncodeSansWide-SemiBold-webfont.ttf')  format('truetype'), url('#{$fonts-root}/EncodeSansWide-SemiBold-webfont.svg#encode_sans_widebold') format('svg');
+}

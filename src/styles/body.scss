@@ -1,0 +1,5 @@
+body {
+  @include font-regular(16px);
+  background-image: url('/images/background.png');
+  font-family: $font-family;
+}

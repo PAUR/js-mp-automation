@@ -1,0 +1,13 @@
+.header {
+  @include font-bold(20px);
+  height: 60px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__content {
+    max-width: 50%;
+  }
+
+}

@@ -1,0 +1,21 @@
+$main-bg-color: rgba(0, 0, 0, .7);
+$main-fg-color: #fff;
+
+%content {
+  color: $main-fg-color;
+  background-color: $main-bg-color;
+  display: block;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.main {
+  &__header {
+    @extend %content;
+  }
+
+  &__content {
+    @extend %content;
+  }
+
+}
