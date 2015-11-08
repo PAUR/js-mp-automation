@@ -59,7 +59,7 @@ function _bundleConfig(env) {
         entries: paths.src.mainScript,
         outputName: 'app.js',
         dest: paths.www._root,
-        debug: (env === 'DEV')
+        debug: (env === 'development')
     };
     return config;
 }
