@@ -1,6 +1,6 @@
 export default statesConfig;
 
 /*@ngInject*/
-function statesConfig($stateProvider, $urlRouterProvider) {
+function statesConfig($urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
 }
