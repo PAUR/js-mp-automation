@@ -21,7 +21,6 @@ sinonAsPromised(q.Promise);
 
 beforeEach(() => {
     global.env = sinon.sandbox.create();
-    mocks(global.env);
 });
 
 afterEach(() => {
