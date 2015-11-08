@@ -1,39 +1,22 @@
 'use strict';
 
 const
+    envUtil = require('./lib/envUtil'),
     getEnv = require('getenv'),
-    fs = require('fs'),
     path = require('path');
 
-(function tryLoadEnv() {
-    const gutil = require('gulp-util');
+const ENV_PATH = path.join(__dirname, '.env');
 
-    const ENV_PATH = path.join(__dirname, '.env');
+envUtil.load(ENV_PATH);
 
-    try {
-        fs.statSync(ENV_PATH);
-        loadEnv();
-    } catch (error) {
-        if (error.code !== 'ENOENT') {
-            throw error;
-        }
-        gutil.log(`[${gutil.colors.red('!Warning')}] Can't load ${gutil.colors.magenta(ENV_PATH)} file`);
-    }
-
-    function loadEnv() {
-        fs.statSync(ENV_PATH);
-        require('dotenv').config({path: ENV_PATH});
-    }
-})();
-
-const DEFAULT_ENV = 'development';
+const DEV_ENV = 'development';
 const DEFAULT_SERVER_PORT = 9000;
 
-const ENV = getEnv('NODE_ENV', DEFAULT_ENV);
+const NODE_ENV = getEnv('NODE_ENV', DEV_ENV).toLowerCase();
 
 module.exports = {
-    ENV: ENV, // DEV RELEASE
+    ENV: NODE_ENV, // development | * (tract as production otherwise)
     SERVER_PORT: getEnv.int('PORT', DEFAULT_SERVER_PORT),
-    isDev: (ENV === DEFAULT_ENV),
-    isRelease: (ENV !== DEFAULT_ENV)
+    isDev: (NODE_ENV === DEV_ENV),
+    isRelease: (NODE_ENV !== DEV_ENV)
 };
