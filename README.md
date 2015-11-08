@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/PAUR/js-mp-automation.svg)](https://travis-ci.org/PAUR/js-mp-automation)
