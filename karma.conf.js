@@ -5,7 +5,7 @@ const
     isparta = require("isparta"),
     istanbul = require('browserify-istanbul');
 
-module.exports = function (karmaConfig) {
+module.exports = function(karmaConfig) {
 
     var configuration = {
         files: [].concat(
@@ -21,7 +21,7 @@ module.exports = function (karmaConfig) {
 
         browsers: ['PhantomJS'],
 
-        preprocessors: (()=> {
+        preprocessors: (() => {
             const preprocessors = {};
             preprocessors[config.paths.test.config] = ['browserify'];
             preprocessors[config.patterns.src.scripts] = ['browserify', 'coverage'];
@@ -31,8 +31,8 @@ module.exports = function (karmaConfig) {
 
         browserify: {
             debug: true,
-            configure: function (bundle) {
-                bundle.once('prebundle', function () {
+            configure: function(bundle) {
+                bundle.once('prebundle', function() {
                     bundle
                         .transform('babelify')
                         .plugin('proxyquire-universal')
@@ -50,8 +50,14 @@ module.exports = function (karmaConfig) {
         coverageReporter: {
             type: 'lcov',
             dir: config.paths.reports,
-            instrumenters: {isparta: isparta},
-            instrumenter: (()=> {
+            reporters : [{
+                type: 'html',
+                subdir: 'html'
+            }],
+            instrumenters: {
+                isparta: isparta
+            },
+            instrumenter: (() => {
                 const instrumenter = {};
                 instrumenter[config.patterns.src.scripts] = 'isparta';
                 return instrumenter;
