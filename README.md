@@ -10,7 +10,7 @@
 
 * ``` npm run watch ``` build app, starts watchers, runs karma in watch mode, serve usnig browser-sync (best for development)
 * ``` npm test ``` single run tests and generates html coverage report
-* ``` npm start ``` serve wwww dir with express
+* ``` npm start ``` serve www dir with express
 * ``` npm install ``` installs all dependencies and build project
 
 ### .env file
