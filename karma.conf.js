@@ -52,7 +52,7 @@ module.exports = function(karmaConfig) {
             dir: config.paths.reports,
             reporters : [{
                 type: 'html',
-                subdir: 'html'
+                subdir: 'coverage'
             }],
             instrumenters: {
                 isparta: isparta
