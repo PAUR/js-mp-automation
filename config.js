@@ -42,7 +42,7 @@ const patterns = new Layout({
                 all: '/**/*.png',
                 retina: '/**/*@2x.png'
             },
-            images: '/images/**/*.png',
+            images: '/images/**/*.+(png|jpeg|svg)',
             fonts: '/fonts/**'
         }
     },
