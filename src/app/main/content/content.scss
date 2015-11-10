@@ -20,5 +20,24 @@
         background-color: rgba(0, 0, 0, $position / 10);
       }
     }
+
+    &:hover {
+      background-color: rgba(0, 0, 27, .7);
+      transition: background-color ease .3s;
+    }
+  }
+
+  &__coverage {
+    padding-bottom: 10px;
+
+    &-link {
+      text-transform: uppercase;
+      text-decoration: none;
+      @include font-bold(20px);
+      color: greenyellow;
+      &:hover {
+        color: red;
+      }
+    }
   }
 }

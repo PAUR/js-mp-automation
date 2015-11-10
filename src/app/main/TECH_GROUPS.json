@@ -13,15 +13,6 @@
     ]
   },
   {
-    "name": "CSS",
-    "techs": [
-      {
-        "name": "Sass preprocessor",
-        "imageUrl": "/images/sass.png"
-      }
-    ]
-  },
-  {
     "name": "Testing",
     "techs": [
       {
@@ -30,7 +21,7 @@
       },
       {
         "name": "Mocha testing framework",
-        "imageUrl": "/images/mocha.png"
+        "imageUrl": "/images/mocha.svg"
       },
       {
         "name": "Chai assertation library",
@@ -38,6 +29,18 @@
       },
       {
         "name": "Sinon test doubles library"
+      }
+    ]
+  },
+  {
+    "name": "CSS",
+    "techs": [
+      {
+        "name": "Sass preprocessor",
+        "imageUrl": "/images/sass.png"
+      },
+      {
+        "name": "Css auto-prefixer"
       }
     ]
   },
