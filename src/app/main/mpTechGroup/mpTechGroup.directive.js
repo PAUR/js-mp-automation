@@ -6,7 +6,7 @@ export default mpTechGroupDirective;
 function mpTechGroupDirective() {
     return {
         restrict: 'E',
-        replace: true,
+        replace: false,
         scope: {
             techGroup: '='
         },

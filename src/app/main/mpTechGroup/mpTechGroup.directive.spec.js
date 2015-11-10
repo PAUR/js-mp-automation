@@ -13,7 +13,7 @@ describe('app::main::directive mpTechGroup', () => {
     });
 
     it('should replace custom tags', () => {
-       sut.replace.should.be.true;
+       sut.replace.should.be.false;
     });
 
     describe('scope', () => {

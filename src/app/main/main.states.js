@@ -14,7 +14,9 @@ function mainStates($stateProvider) {
                 templateUrl: path.join(__dirname, '/header/main-header.html')
             },
             'content@main': {
-                templateUrl: path.join(__dirname, '/content/main-content.html')
+                templateUrl: path.join(__dirname, '/content/main-content.html'),
+                controller: require('./content/MainContentController'),
+                controllerAs: 'mainContentCtrl'
             }
         }
     });

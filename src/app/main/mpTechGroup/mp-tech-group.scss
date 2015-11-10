@@ -7,5 +7,13 @@
   &__name {
     margin: 0;
     padding: 5px 10px;
+    width: 100%;
+    border-bottom: 20px solid rgba(0, 0, 0, .2);
+    text-align: center;
+  }
+
+  &__tech {
+    width: 100%;
+    border-bottom: 20px solid rgba(0, 0, 0, .2);
   }
 }
