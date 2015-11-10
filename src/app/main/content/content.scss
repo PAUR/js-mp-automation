@@ -6,8 +6,18 @@
   padding: 10px;
   height: 600px;
 
-  &__technologies {
+  &__tech-groups {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
     width: 100%;
     min-height: 600px;
+    border-top: 1px solid white;
+  }
+
+  &__tech-group {
+    width: 25%;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
   }
 }
