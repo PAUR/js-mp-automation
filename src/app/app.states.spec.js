@@ -9,9 +9,9 @@ describe('app::config states', () => {
         };
     });
 
-    it('should redirect to / by default', () => {
+    it('should redirect to /dima by default', () => {
         sut($urlRouterProvider);
-        $urlRouterProvider.otherwise.should.been.calledWith('/');
+        $urlRouterProvider.otherwise.should.been.calledWith('/dima');
     });
     
 });
