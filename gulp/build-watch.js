@@ -1,3 +1,3 @@
 'use strict';
 
-gulp.task('build-watch', ['html', 'fonts', 'images', 'styles', 'watch']);
+gulp.task('build-watch', ['html', 'fonts', 'images', 'styles', 'scripts:vendor', 'watch']);

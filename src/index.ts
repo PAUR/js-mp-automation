@@ -1,10 +1,12 @@
-import angular from 'angular';
+declare const angular:any;
+
+import app = require('./app');
 
 angular
     .element(document)
     .ready(() => {
         angular
-            .bootstrap(document, [require('./app')], {
+            .bootstrap(document, [app], {
                 strictDi: true
             });
     });

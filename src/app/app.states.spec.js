@@ -1,4 +1,4 @@
-import sut from './app.states';
+import sut from './app.states.ts';
 
 describe('app::config states', () => {
     let $urlRouterProvider;

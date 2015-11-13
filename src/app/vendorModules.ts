@@ -1,0 +1,4 @@
+export = [
+    'ui.router',
+    'ngTouch'
+];

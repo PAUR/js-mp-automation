@@ -18,7 +18,9 @@ const watchifyConfig = {
 };
 
 let bundler = browserify(Object.assign({}, watchifyConfig, config.bundleConfig));
-bundler.transform('babelify');
+
+bundler
+    .plugin('tsify');
 
 gulp.task('scripts', ['templates'], () => {
     return bundle(bundler, config.bundleConfig);

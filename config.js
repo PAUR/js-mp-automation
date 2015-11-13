@@ -5,7 +5,8 @@ const Layout = require('./lib/layout');
 const paths = new Layout({
     src: {
         index: 'index.html',
-        mainScript: 'index.js',
+        mainScript: 'index.ts',
+        vendorsScript: 'vendors.js',
         templates: '/app/templates',
         styles: {
             main: 'index.scss',
@@ -30,8 +31,8 @@ const paths = new Layout({
 
 const patterns = new Layout({
     src: {
-        scripts: '/**/!(*.spec).js',
-        tests: '/**/*.spec.js',
+        scripts: '/**/!(*.spec).ts',
+        tests: '/**/*.spec.+(js|ts)',
         styles: {
             build: [paths.src.styles.__layout.main, '../app/**/*.scss'],
             all: '../**/*.scss'
@@ -54,6 +55,12 @@ const patterns = new Layout({
     }
 });
 
+const vendorBundleConfig = {
+    entries: paths.src.vendorsScript,
+    outputName: 'vendors.js',
+    dest: paths.www._root
+};
+
 function _bundleConfig(env) {
     const config = {
         entries: paths.src.mainScript,
@@ -67,5 +74,6 @@ function _bundleConfig(env) {
 module.exports = {
     paths: paths,
     patterns: patterns,
-    _bundleConfig: _bundleConfig
+    _bundleConfig: _bundleConfig,
+    vendorBundleConfig: vendorBundleConfig
 };

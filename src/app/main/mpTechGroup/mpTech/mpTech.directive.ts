@@ -1,7 +1,3 @@
-import path from 'path';
-
-export default mpTechDirective;
-
 /*@ngInject*/
 function mpTechDirective() {
     return {
@@ -10,6 +6,8 @@ function mpTechDirective() {
         scope: {
             tech: '='
         },
-        templateUrl: path.join(__dirname, 'mp-tech.html')
+        templateUrl: '/src/app/main/mpTechGroup/mpTech/mp-tech.html'
     }
 }
+
+export = mpTechDirective;
