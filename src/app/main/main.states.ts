@@ -1,4 +1,6 @@
-import MainContentController = require('./content/MainContentController');
+import MainContentController from './content/MainContentController';
+
+export default mainStates;
 
 /*@ngInject*/
 function mainStates($stateProvider) {
@@ -20,5 +22,3 @@ function mainStates($stateProvider) {
         }
     });
 }
-
-export = mainStates;

@@ -1,4 +1,4 @@
-class MainContentController {
+export default class MainContentController {
 
     public techGroups;
 
@@ -7,5 +7,3 @@ class MainContentController {
         this.techGroups = TECH_GROUPS;
     }
 }
-
-export = MainContentController;

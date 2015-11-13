@@ -1,11 +1,11 @@
 declare const angular:any;
 
-import mainStatesConfig = require('./main.states');
-import TECH_GROUPS = require('./TECH_GROUPS');
-import mpTechGroupDirective = require('./mpTechGroup/mpTechGroup.directive');
-import mpTechDirective = require('./mpTechGroup/mpTech/mpTech.directive');
+import mainStatesConfig from './main.states';
+import TECH_GROUPS from './TECH_GROUPS';
+import mpTechGroupDirective from './mpTechGroup/mpTechGroup.directive';
+import mpTechDirective from './mpTechGroup/mpTech/mpTech.directive';
 
-export = angular
+export default angular
     .module('app.main', [])
     .config(mainStatesConfig)
     .constant('TECH_GROUPS', TECH_GROUPS)

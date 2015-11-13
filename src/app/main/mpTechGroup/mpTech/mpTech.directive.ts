@@ -1,3 +1,5 @@
+export default mpTechDirective;
+
 /*@ngInject*/
 function mpTechDirective() {
     return {
@@ -9,5 +11,3 @@ function mpTechDirective() {
         templateUrl: '/src/app/main/mpTechGroup/mpTech/mp-tech.html'
     }
 }
-
-export = mpTechDirective;

@@ -1,3 +1,5 @@
+export default mpTechGroupDirective;
+
 /*@ngInject*/
 function mpTechGroupDirective() {
     return {
@@ -9,5 +11,3 @@ function mpTechGroupDirective() {
         templateUrl: '/src/app/main/mpTechGroup/mp-tech-group.html'
     };
 }
-
-export = mpTechGroupDirective;

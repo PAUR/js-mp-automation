@@ -1,7 +1,8 @@
 declare const angular:any;
-import templateCache = require('./templateCache');
 
-export = angular
+import templateCache from './templateCache';
+
+export default angular
     .module('app.templates', [])
     .run(templateCache)
     .name;

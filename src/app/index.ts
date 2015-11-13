@@ -1,8 +1,8 @@
 declare const angular:any;
-import vendorModules = require('./vendorModules');
-import templatesModule = require('./templates');
-import mainModule = require('./main');
-import appStates = require('./app.states');
+import vendorModules from './vendorModules';
+import templatesModule from './templates';
+import mainModule from './main';
+import appStates from './app.states';
 
 export = angular
     .module('app', [].concat(

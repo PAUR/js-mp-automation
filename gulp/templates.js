@@ -10,8 +10,8 @@ gulp.task('templates', () => {
         .pipe(templateCache({
             root: path.join('/', config.paths.src._root, '/app'),
             filename: 'templateCache.ts',
-            templateHeader: '/*@ngInject*/ function templateCache($templateCache) {',
-            templateFooter: '}; export = templateCache;'
+            templateHeader: 'export default templateCache;\n/*@ngInject*/\nfunction templateCache($templateCache) {',
+            templateFooter: '}'
         }))
         .pipe(gulp.dest(config.paths.src.templates));
 });
