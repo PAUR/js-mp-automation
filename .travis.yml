@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- '4.1'
+- '5.0.0'
+deploy:
+  provider: heroku
+  api_key:
+    secure: V5NLBQyQ2zqPEd49iYqO49nTxn5FPMlaurY5VGIMZ7TNiyvDYjYskjwVDuZ+MXs+p51csXsDTcwgtxoS1v38o+RF4M/vngLXWVwkeLcLQfNX7qHVOJtPIW73agpIDV0zf0rsP8w+dT8GNFrV5hGhjWfltbcEyUp6znxlrgvrlG90BQ/ixBl2dI51CSYf6pV4RJut3nDlzPFz+DiKsojpcf78oAGjRnd4robpM7ZFMNrGb+XDoPBUE4HV3zwN4svZ8vEoxVbtVZTMjxcTN9nwHF15ktI/3JS+KdWqTBwY+V6RmuCDzZJJmhb0D0rs3pYd8tcIrBuFTQKvYq7lVl8CwYHysBqRMECgmfSFzR9K/rzjbrW1ksYL5qR6fvxBCUN0IENvAeci/6IXxyqeFBtGgqxMkvA1tKs6dEBkKxURMCIqMIQ+uZTxGfCLT2TDmcUiY7Ldm2hyPCdceAUILUKbekgg1tn7N45ORRzN3JDJ96HLWzzszZ8m2TIiYxOazQ4NoYeU7TXHfmvg61Pxfv7gO/g8F+nARydHsBeUEbLt6y1uVXlt705PjakM0IDF3oOfIDsOk34wEEEasII/nQ8On80yMsh5bZHQ5B2tXsqv5HET1Fn79D6HpY25xw9hP1B/LV5C7MHgNMMQuTUj+IguFZZxoauKCrYTSBsHWOFjC1M=
+  app: js-mp-automation
+  on:
+    repo: PAUR/js-mp-automation
