@@ -10,8 +10,7 @@
     "start:watch": "gulp watch-serve",
     "test": "karma start --singleRun --no-autoWatch --reporters dots,coverage",
     "test:watch": "karma start --no-singleRun --autoWatch --reporters progress",
-    "watch": "npm-run-all -p *:watch",
-    "heroku": "npm-run-all -s test start"
+    "watch": "npm-run-all -p *:watch"
   },
   "dependencies": {
     "angular": "^1.4.6",
