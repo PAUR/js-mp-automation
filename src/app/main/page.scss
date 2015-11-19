@@ -14,13 +14,11 @@ $gap: 20px;
     width: $main-width;
     height: 100px;
     margin-right: $gap;
-    border: 1px solid black;
   }
 
   &__aside {
     float: left;
     height: 100px;
     width: $page-width - $main-width - $gap;
-    border: 1px solid black;
   }
 }
