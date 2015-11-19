@@ -1,0 +1,26 @@
+$page-width: 968px;
+$main-width: 620px;
+$gap: 20px;
+
+.page {
+  @extend %clear-fix;
+
+  width: $page-width;
+  margin: 0 auto;
+  padding-top: 31px;
+
+  &__main {
+    float: left;
+    width: $main-width;
+    height: 100px;
+    margin-right: $gap;
+    border: 1px solid black;
+  }
+
+  &__aside {
+    float: left;
+    height: 100px;
+    width: $page-width - $main-width - $gap;
+    border: 1px solid black;
+  }
+}
