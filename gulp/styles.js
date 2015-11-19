@@ -19,7 +19,9 @@ function buildStyles() {
         .pipe(concat('app.scss'))
         .pipe(gulpif(env.isDev, sourcemaps.init()))
         .pipe(sass().on('error', sass.logError))
-        .pipe(autoprefixer())
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions', 'IE 9']
+        }))
         .pipe(gulpif(env.isRelease, minifyCss()))
         .pipe(gulpif(env.isDev, sourcemaps.write('./maps')))
         .pipe(gulp.dest(config.paths.www._root))
