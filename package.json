@@ -13,8 +13,8 @@
     "watch": "npm-run-all -p *:watch"
   },
   "dependencies": {
-    "angular": "^1.4.6",
-    "angular-touch": "^1.4.6",
+    "angular": "^1.2.29",
+    "angular-touch": "^1.2.29",
     "angular-ui-router": "^0.2.15",
     "babelify": "^6.3.0",
     "browser-sync": "~2.7.12",
