@@ -7,7 +7,7 @@ $item-height: 30px;
   line-height: $item-height;
   font-size: 0;
 
-  background-color: silver; // todo
+  background-color: $gray-scale-3; // todo
 
   &__item {
     display: inline-block;
@@ -18,7 +18,7 @@ $item-height: 30px;
 
     &_main {
       color: white; // todo
-      background-color: black; // todo
+      background-color: $gray-scale-1; // todo
     }
   }
 }
