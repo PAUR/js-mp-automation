@@ -1,0 +1,50 @@
+$downline-width: 5px;
+
+.slider {
+  position: relative;
+  display: table;
+  box-sizing: content-box;
+  margin-bottom: 30px;
+  border-bottom: $downline-width solid $brand-main-color;
+  padding-top: 2px;
+  height: 250px;
+  width: 100%;
+  
+  background-color: $gray-scale-4;
+
+  &__image {
+    display: table-cell;
+    width: 377px;
+    height: 100%;
+
+    background-color: $place-holder;
+  }
+
+  &__content {
+    display: table-cell;
+    width: 100%;
+
+    vertical-align: top;
+  }
+
+  &__heading {
+    margin: 0;
+    padding: 15px 20px;
+
+    color: $brand-main-color;
+    font-size: 22px;
+  }
+
+  &__info {
+    font-size: 10px;
+    padding: 0 20px;
+    margin: 0;
+  }
+
+  &__navigator {
+    $corner-offset: 12px;
+    position: absolute;
+    right: $corner-offset;
+    bottom: $corner-offset;
+  }
+}
