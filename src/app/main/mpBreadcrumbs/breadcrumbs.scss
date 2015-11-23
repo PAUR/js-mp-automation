@@ -8,18 +8,18 @@ $item-height: 30px;
   line-height: $item-height;
   font-size: 0;
 
-  background-color: $gray-scale-3; // todo
+  background-color: $gray-scale-2;
 
   &__item {
     display: inline-block;
     padding: 0 15px;
     height: 100%;
 
-    font-size: 14px;
+    font-size: 16px;
 
     &_main {
       color: white; // todo
-      background-color: $gray-scale-1; // todo
+      background-color: $gray-scale-1;
     }
   }
 }
