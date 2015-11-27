@@ -9,5 +9,5 @@ export default angular
     .config(mainStatesConfig)
     .directive('mpBreadcrumbs', mpBreadcrumbsDirective)
     .directive('mpSlider', mpSliderDirective)
-    .directive('mpNewsHeader', mpNewsHeaderDirective);
+    .directive('mpNewsHeader', mpNewsHeaderDirective)
     .name;
