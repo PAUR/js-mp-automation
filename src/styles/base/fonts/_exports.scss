@@ -1,0 +1,14 @@
+@import 'vars';
+@import 'mixins';
+
+@font-face {
+  font-family: Slabo13;
+  font-weight: $font-weight-regular;
+  src: url('#{$fonts-root}/Slabo13px-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Slabo27;
+  font-weight: $font-weight-regular;
+  src: url('#{$fonts-root}/Slabo27px-Regular.ttf') format('truetype');
+}
