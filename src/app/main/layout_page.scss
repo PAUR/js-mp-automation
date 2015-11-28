@@ -1,0 +1,19 @@
+$page-width: 940px;
+$main-width: 640px;
+
+.layout {
+  &_page {
+    margin: 0 auto;
+    width: $page-width;
+
+    color: $text-main-color;
+  }
+
+  &__main_page {
+    width: $main-width;
+  }
+
+  &__aside_page {
+    width: $page-width - $main-width;
+  }
+}
