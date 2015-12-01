@@ -4,6 +4,7 @@
   list-style: none;
 
   &__item {
+    vertical-align: middle;
     &:before {
       content: '•';
       padding-right: 3px;
