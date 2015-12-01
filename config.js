@@ -9,7 +9,7 @@ const paths = new Layout({
         templates: '/app/templates',
         styles: {
             main: 'index.scss',
-            icons: '/core/icons/'
+            icons: '/base'
         },
         media: {
             fonts: 'fonts',
