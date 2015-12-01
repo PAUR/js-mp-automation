@@ -1,0 +1,22 @@
+<div class="news-item"
+     ng-class="{'news-item_main': isMain}">
+
+    <a ng-href="{{link ? link : '#'}}"
+       class="news-item__link">
+        <span ng-transclude>
+        </span>
+
+        <i ng-if="hasPhotos"
+           class="news-item__icon icon icon_photo-gray">
+        </i>
+
+        <i ng-if="hasVideos"
+           class="news-item__icon icon icon_video-gray">
+        </i>
+    </a>
+
+    <span ng-if="origin"
+          class="news-item__origin">
+        {{origin}}
+    </span>
+</div>

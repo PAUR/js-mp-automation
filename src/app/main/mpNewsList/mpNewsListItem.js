@@ -7,6 +7,9 @@ function mpNewsListItemDirective() {
         require: ['^mpNewsList'],
         replace: true,
         transclude: true,
+        scope: {
+            isMain: '='
+        },
         templateUrl: __dirname + '/mp-news-list-item.html'
     };
 }

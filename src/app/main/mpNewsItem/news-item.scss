@@ -1,0 +1,28 @@
+.news-item {
+  display: inline-block;
+  vertical-align: middle;
+
+  &_main {
+    font-weight: bold;
+  }
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: $link-color-active;
+      text-decoration: underline;
+    }
+  }
+
+  &__origin {
+    color: $link-color-origin;
+    font-weight: normal;
+    font-size: .8em;
+  }
+
+  &__icon {
+    margin: -7px -5px -4px;
+  }
+}

@@ -6,6 +6,7 @@ import mpNewsHeaderDirective from './mpNewsHeader/mpNewsHeader.js';
 import mpMainNewsDirective from './mpMainNews/mpMainNews.js';
 import mpNewsListDirective from './mpNewsList/mpNewsList.js';
 import mpNewsListItemDirective from './mpNewsList/mpNewsListItem.js';
+import mpNewsItemDirective from './mpNewsItem/mpNewsItem.js';
 
 export default angular
     .module('app.main', [])
@@ -16,4 +17,5 @@ export default angular
     .directive('mpMainNews', mpMainNewsDirective)
     .directive('mpNewsList', mpNewsListDirective)
     .directive('mpNewsListItem', mpNewsListItemDirective)
+    .directive('mpNewsItem', mpNewsItemDirective)
     .name;

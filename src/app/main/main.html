@@ -25,64 +25,60 @@
                 <mp-news-list>
 
                     <mp-news-list-item>
-                        <a href="#" class="news-list-item__link">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit.
-                        </a>
-                        <span class="news-list-item__origin">
-                            marca.com
-                        </span>
+                        <mp-news-item class="news-list-item__news-item" origin="'marga.com'">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </mp-news-item>
                     </mp-news-list-item>
 
                     <mp-news-list-item>
-                        <a href="#" class="news-list-item__link">Atque aut doloribus laudantium libero
+                        <mp-news-item class="news-list-item__news-item">
+                            Atque aut doloribus laudantium libero
                             nostrum quo quos sequi.
-                        </a>
+                        </mp-news-item>
                     </mp-news-list-item>
 
                     <mp-news-list-item>
-                        <a href="#" class="news-list-item__link">A alias id minima omnis perspiciatis
-                            repellat repudiandae velit.
-                        </a>
+                        <mp-news-item class="news-list-item__news-item">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing.
+                        </mp-news-item>
                     </mp-news-list-item>
 
                     <mp-news-list-item>
-                        <a href="#" class="news-list-item__link">Accusamus architecto aspernatur incidunt
-                            laborum.
-                            <i class="news-list-item__icon icon icon_photo-gray"></i>
-                            <i class="news-list-item__icon icon icon_video-gray"></i>
-                        </a>
+                        <mp-news-item class="news-list-item__news-item"
+                                      has-photos="true"
+                                      has-videos="true">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </mp-news-item>
                     </mp-news-list-item>
 
                     <mp-news-list-item>
-                        <a href="#" class="news-list-item__link">Aliquid architecto dolor labore laborum
-                            pariatur qui repellendus, temporibus.
-                        </a>
+                        <mp-news-item class="news-list-item__news-item">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing.
+                        </mp-news-item>
                     </mp-news-list-item>
 
                     <mp-news-list-item>
-                        <a href="#" class="news-list-item__link">Adipisci ea enim, fuga maiores nisi
-                            quisquam quos rem.
-                        </a>
+                        <mp-news-item class="news-list-item__news-item">Eius iure quo sapiente tempore, velit
+                            voluptatem.
+                        </mp-news-item>
                     </mp-news-list-item>
 
                     <mp-news-list-item>
-                        <a href="#" class="news-list-item__link">Assumenda, officia optio? Aliquam aut
-                            molestiae rem sed. Ullam.
-                        </a>
+                        <mp-news-item class="news-list-item__news-item">Dicta, dolor explicabo fuga harum qui tempore.
+                        </mp-news-item>
                     </mp-news-list-item>
 
                     <mp-news-list-item>
-                        <a href="#" class="news-list-item__link">Aliquid doloribus, nemo nesciunt odio
-                            omnis pariatur unde voluptas.
-                        </a>
+                        <mp-news-item class="news-list-item__news-item">Assumenda dicta expedita fuga omnis optio
+                            veniam.
+                        </mp-news-item>
                     </mp-news-list-item>
 
                     <mp-news-list-item>
-                        <a href="#" class="news-list-item__link">Adipisci atque dolores in modi porro quis
-                            repellendus temporibus.
-                        </a>
+                        <mp-news-item class="news-list-item__news-item">Aliquid deleniti, dolorem eum mollitia officia
+                            quam?
+                        </mp-news-item>
                     </mp-news-list-item>
-
 
                 </mp-news-list>
 
@@ -91,42 +87,38 @@
                 </mp-news-header>
 
                 <mp-news-list>
-
-                    <mp-news-list-item class="news-list-item_main">
+                    <mp-news-list-item is-main="true">
                         <img mp-img class="news-list-item__photo"/>
 
-                        <a href="#" class="news-list-item__link news-list-item__link_main">
+                        <mp-news-item class="news-list-item__news-item news-list-item__news-item_main"
+                                      is-main="true"
+                                      has-photos="true">
                             Lorem ipsum dolor sit amet, consectetur adipisicing.
-                            <i class="news-list-item__icon icon icon_photo-gray"></i>
+                        </mp-news-item>
+                    </mp-news-list-item>
+
+                    <mp-news-list-item>
+                        <a href="#" class="news-item__link">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing.
                         </a>
                     </mp-news-list-item>
 
                     <mp-news-list-item>
-                        <a href="#" class="news-list-item__link">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing.
-                        </a>
-                    </mp-news-list-item>
-
-                    <mp-news-list-item>
-                        <a href="#" class="news-list-item__link">
+                        <mp-news-item class="news-list-item__news-item" has-photos="true">
                             Dolore iste nesciunt nobis quam reprehenderit voluptates.
-                            <i class="news-list-item__icon icon icon_photo-gray"></i>
-                        </a>
+                        </mp-news-item>
                     </mp-news-list-item>
 
                     <mp-news-list-item>
-                        <a href="#" class="news-list-item__link">
-                            Aliquam dolorum eius harum, quidem repellat sint.
-                        </a>
-                        <span class="news-list-item__origin">
-                            fafi.com
-                        </span>
+                        <mp-news-item class="news-list-item__news-item" origin="'fafi.com'">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing.
+                        </mp-news-item>
                     </mp-news-list-item>
 
                     <mp-news-list-item>
-                        <a href="#" class="news-list-item__link">
+                        <mp-news-item class="news-list-item__news-item">
                             Cupiditate, delectus maiores minus nobis soluta vitae.
-                        </a>
+                        </mp-news-item>
                     </mp-news-list-item>
 
                 </mp-news-list>
