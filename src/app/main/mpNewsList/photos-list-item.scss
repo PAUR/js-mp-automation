@@ -1,0 +1,24 @@
+.photos-list-item {
+  position: relative;
+  padding-bottom: 20px;
+
+  &__photo {
+    display: block;
+    width: 100%;
+    height: 140px;
+  }
+
+  &__news-item {
+    display: block;
+    @include font-bold(18px);
+    line-height: 1.1;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 107px;
+    left: 6px;
+    @include sprite($icon-photo-red);
+  }
+}
