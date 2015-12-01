@@ -1,0 +1,26 @@
+.videos-list-item {
+  position: relative;
+  display: table;
+  padding-bottom: 10px;
+
+  &__photo {
+    display: table-cell;
+    width: 140px;
+    height: 90px;
+  }
+
+  &__news-item {
+    display: table-cell;
+    vertical-align: top;
+    padding: 0 9px;
+    font-weight: bold;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 2px;
+    @include sprite($icon-video-violet);
+  }
+}
