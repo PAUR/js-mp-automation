@@ -2,7 +2,6 @@
 @import "util/exports";
 @import "base/exports";
 @import "blocks/exports";
-@import "browser-upgrade";
 
 * {
   box-sizing: border-box;
@@ -12,4 +11,11 @@ body {
   font-family: $font-family;
   color: $text-main-color;
   font-size: 14px;
+}
+
+.browser-upgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
