@@ -4,18 +4,6 @@
   list-style: none;
 
   &__item {
-
-    vertical-align: middle;
-
-    a {
-      color: inherit;
-      text-decoration: none;
-      &:hover {
-        color: $link-color;
-        text-decoration: underline;
-      }
-    }
-
     &:before {
       content: '•';
       padding-right: 3px;
