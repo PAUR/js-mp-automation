@@ -1,0 +1,25 @@
+.videos {
+
+  &__list {
+    margin: 0;
+    padding-left: 0;
+    padding-bottom: 11px;
+    list-style: none;
+  }
+
+  &__more {
+    display: block;
+    border-bottom: 5px solid $gray-scale-0;
+    padding-bottom: 3px;
+    color: $link-color-active;
+    width: 100%;
+
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
