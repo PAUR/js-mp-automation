@@ -9,14 +9,6 @@
   color: $link-color-active;
   text-transform: capitalize;
 
-  &_main {
-    color: $gray-scale-0;
-
-    &.news-header:after {
-      border-bottom-color: $gray-scale-0;
-    }
-  }
-
   &__text {
     z-index: 2;
     position: absolute;

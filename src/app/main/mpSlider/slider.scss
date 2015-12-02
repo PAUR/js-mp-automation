@@ -4,7 +4,7 @@ $downline-width: 5px;
   position: relative;
   display: table;
   box-sizing: content-box;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   border-bottom: $downline-width solid $brand-main-color;
   padding-top: 2px;
   height: 250px;
@@ -43,9 +43,8 @@ $downline-width: 5px;
   }
 
   &__navigator {
-    $corner-offset: 16px;
     position: absolute;
-    right: $corner-offset;
-    bottom: $corner-offset;
+    right: 16px;
+    bottom: 14px;
   }
 }
