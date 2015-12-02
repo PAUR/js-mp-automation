@@ -4,7 +4,7 @@ export default  mpNewsListItemDirective;
 function mpNewsListItemDirective() {
     return {
         restrict: 'E',
-        require: ['^mpNewsList'],
+        require: ['^mpNews'],
         replace: true,
         transclude: true,
         scope: {

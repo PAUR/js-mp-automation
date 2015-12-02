@@ -16,11 +16,12 @@
   }
 
   &__news-item {
-    &_main {
+    &_main.news-item {
       display: table-cell;
       vertical-align: middle;
       padding-left: 7px;
       padding-right: 7px;
+      font-weight: bold;
     }
   }
 

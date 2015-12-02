@@ -4,7 +4,7 @@ export default  mpPhotosListItemDirective;
 function mpPhotosListItemDirective() {
     return {
         restrict: 'E',
-        require: ['^mpNewsList'],
+        require: ['^mpNews'],
         replace: true,
         transclude: true,
         templateUrl: __dirname + '/mp-photos-list-item.html'

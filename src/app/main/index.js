@@ -11,9 +11,9 @@ import mpNewsHeaderDirective from './mpNewsHeader/mpNewsHeader.js';
 
 import mpMainNewsDirective from './mpMainNews/mpMainNews.js';
 
-import mpNewsListDirective from './mpNewsList/mpNewsList.js';
-import mpNewsListItemDirective from './mpNewsList/mpNewsListItem.js';
-import mpPhotosListItemDirective from './mpNewsList/mpPhotosListItem.js';
+import mpNewsDirective from './mpNews/mpNews.js';
+import mpNewsListItemDirective from './mpNews/mpNewsListItem.js';
+import mpPhotosListItemDirective from './mpNews/mpPhotosListItem.js';
 
 import mpVideosDirective from './mpVideos/mpVideos.js';
 import mpVideosListItemDirective from './mpVideos/mpVideosListItem.js';
@@ -30,7 +30,7 @@ export default angular
     .directive('mpNewsHeader', mpNewsHeaderDirective)
     .directive('mpMainNews', mpMainNewsDirective)
 
-    .directive('mpNewsList', mpNewsListDirective)
+    .directive('mpNews', mpNewsDirective)
     .directive('mpNewsListItem', mpNewsListItemDirective)
     .directive('mpPhotosListItem', mpPhotosListItemDirective)
 

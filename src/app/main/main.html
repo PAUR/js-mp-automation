@@ -18,11 +18,8 @@
         <div class="layout">
 
             <div class="layout__main">
-                <mp-news-header>
-                    last news
-                </mp-news-header>
 
-                <mp-news-list>
+                <mp-news title="'main news'">
 
                     <mp-news-list-item>
                         <mp-news-item class="news-list-item__news-item" origin="'marga.com'">
@@ -80,27 +77,23 @@
                         </mp-news-item>
                     </mp-news-list-item>
 
-                </mp-news-list>
+                </mp-news>
 
-                <mp-news-header>
-                    newsfeed
-                </mp-news-header>
-
-                <mp-news-list>
+                <mp-news title="'newsfeed'">
                     <mp-news-list-item is-main="true">
                         <img mp-img class="news-list-item__photo"/>
 
                         <mp-news-item class="news-list-item__news-item news-list-item__news-item_main"
-                                      is-main="true"
                                       has-photos="true">
                             Lorem ipsum dolor sit amet, consectetur adipisicing.
                         </mp-news-item>
+
                     </mp-news-list-item>
 
                     <mp-news-list-item>
-                        <a href="#" class="news-item__link">
+                        <mp-news-item class="news-list-item__news-item">
                             Lorem ipsum dolor sit amet, consectetur adipisicing.
-                        </a>
+                        </mp-news-item>
                     </mp-news-list-item>
 
                     <mp-news-list-item>
@@ -121,11 +114,12 @@
                         </mp-news-item>
                     </mp-news-list-item>
 
-                </mp-news-list>
+                </mp-news>
             </div>
 
             <div class="layout__aside">
-                <mp-news-list>
+
+                <mp-news>
                     <mp-photos-list-item>
                         <mp-news-item class="photos-list-item__news-item">
                             Lorem ipsum dolor sit amet, consectetur adipisicing.
@@ -143,8 +137,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipisicing.
                         </mp-news-item>
                     </mp-photos-list-item>
-                </mp-news-list>
-
+                </mp-news>
 
             </div>
 

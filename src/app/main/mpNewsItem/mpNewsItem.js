@@ -9,7 +9,6 @@ function mpNewsItemDirective() {
         scope: {
             link: '=',
             origin: '=',
-            isMain: '=',
             hasPhotos: '=',
             hasVideos: '='
         },
