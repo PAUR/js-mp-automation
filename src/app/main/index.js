@@ -10,6 +10,7 @@ import mpSliderDirective from './mpSlider/mpSlider.js';
 import mpNewsHeaderDirective from './mpNewsHeader/mpNewsHeader.js';
 
 import mpMainNewsDirective from './mpMainNews/mpMainNews.js';
+import mpMainNewsListItemDirective from './mpMainNews/mpMainNewsListItem.js';
 
 import mpNewsDirective from './mpNews/mpNews.js';
 import mpNewsListItemDirective from './mpNews/mpNewsListItem.js';
@@ -24,11 +25,13 @@ export default angular
     .config(mainStatesConfig)
 
     .directive('mpNewsItem', mpNewsItemDirective)
+    .directive('mpNewsHeader', mpNewsHeaderDirective)
 
     .directive('mpBreadcrumbs', mpBreadcrumbsDirective)
     .directive('mpSlider', mpSliderDirective)
-    .directive('mpNewsHeader', mpNewsHeaderDirective)
+
     .directive('mpMainNews', mpMainNewsDirective)
+    .directive('mpMainNewsListItem', mpMainNewsListItemDirective)
 
     .directive('mpNews', mpNewsDirective)
     .directive('mpNewsListItem', mpNewsListItemDirective)

@@ -1,0 +1,23 @@
+.main-news-list-item {
+
+  display: inline-block;
+  vertical-align: top;
+  list-style: none;
+
+  margin-left: 17.25px;
+  width: 142px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &__photo {
+    width: 142px;
+    height: 90px;
+    margin-bottom: 5px;
+  }
+
+  &__news-item {
+    font-size: 14px;
+  }
+}

@@ -1,29 +1,19 @@
 .main-news {
-  margin: 0;
-  padding: 0;
 
-  font-size: 0;
+  padding-bottom: 29px;
 
-  &__item {
-    display: inline-block;
-    vertical-align: top;
-    list-style: none;
+  &__header.news-header {
+    color: $gray-scale-0;
 
-    margin-left: 17.25px;
-    width: 142px;
-
-    &:first-child {
-      margin-left: 0;
+    &:after {
+      border-bottom-color: $gray-scale-0;
     }
   }
 
-  &__image {
-    width: 142px;
-    height: 90px;
-    margin-bottom: 5px;
+  &__list {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
   }
 
-  &__text {
-    font-size: 14px;
-  }
 }

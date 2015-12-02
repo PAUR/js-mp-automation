@@ -4,6 +4,8 @@ $main-width: 640px;
 .layout {
   &_page {
     margin: 0 auto;
+    padding-top: 31px;
+
     width: $page-width;
 
     color: $text-main-color;

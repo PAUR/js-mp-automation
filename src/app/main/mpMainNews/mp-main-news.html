@@ -1,33 +1,40 @@
-<ul class="main-news">
-    <li class="main-news__item">
-        <img mp-img class="main-news__image">
-        </img>
-        <mp-news-item class="main-news__text">
-            Lorem ipsum dolor sit amet, consectetur.
-        </mp-news-item>
-    </li>
+<div class="main-news">
 
-    <li class="main-news__item">
-        <img mp-img class="main-news__image">
-        </img>
-        <mp-news-item class="main-news__text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing.
-        </mp-news-item>
-    </li>
+    <mp-news-header class="main-news__header">
+        Main news
+    </mp-news-header>
 
-    <li class="main-news__item">
-        <img mp-img class="main-news__image">
-        </img>
-        <mp-news-item class="main-news__text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque.
-        </mp-news-item>
-    </li>
+    <ul class="main-news__list" ng-transclude>
+        <li class="main-news__list-item">
+            <img mp-img class="main-news__image">
+            </img>
+            <mp-news-item class="main-news__text">
+                Lorem ipsum dolor sit amet, consectetur.
+            </mp-news-item>
+        </li>
 
-    <li class="main-news__item">
-        <img mp-img class="main-news__image">
-        </img>
-        <mp-news-item class="main-news__text" has-photos="true">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quaerat!
-        </mp-news-item>
-    </li>
-</ul>
+        <li class="main-news__list-item">
+            <img mp-img class="main-news__image">
+            </img>
+            <mp-news-item class="main-news__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </mp-news-item>
+        </li>
+
+        <li class="main-news__list-item">
+            <img mp-img class="main-news__image">
+            </img>
+            <mp-news-item class="main-news__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque.
+            </mp-news-item>
+        </li>
+
+        <li class="main-news__list-item">
+            <img mp-img class="main-news__image">
+            </img>
+            <mp-news-item class="main-news__text" has-photos="true">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quaerat!
+            </mp-news-item>
+        </li>
+    </ul>
+</div>
