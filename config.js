@@ -21,13 +21,13 @@ function buildConfig(env) {
         test: {
             config: 'testconfig.js'
         },
-        target: {
-            _root: `target/${env.isDev() ? 'debug' : 'release'}`,
+        build: {
+            _root: `build/${env.isDev() ? 'debug' : 'release'}`,
             fonts: 'fonts',
             icons: 'icons.png',
             images: 'images'
         },
-        reports: 'target'
+        reports: 'build'
     });
 
     const patterns = new Layout({
@@ -62,7 +62,7 @@ function buildConfig(env) {
         bundleConfig: {
             entries: paths.src.mainScript,
             outputName: 'app.js',
-            dest: paths.target._root,
+            dest: paths.build._root,
             debug: env.isDev()
         }
     };

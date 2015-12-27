@@ -7,5 +7,5 @@ const
 gulp.task('html', () => {
     return gulp.src(config.paths.src.index)
         .pipe(gulpif(env.isRelease(), minifyHtml()))
-        .pipe(gulp.dest(config.paths.target._root));
+        .pipe(gulp.dest(config.paths.build._root));
 });

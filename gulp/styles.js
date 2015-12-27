@@ -24,6 +24,6 @@ function buildStyles() {
         }))
         .pipe(gulpif(env.isRelease(), minifyCss()))
         .pipe(gulpif(env.isDev(), sourcemaps.write('./maps')))
-        .pipe(gulp.dest(config.paths.target._root))
+        .pipe(gulp.dest(config.paths.build._root))
         .pipe(browserSync.reload({stream: true}));
 }
