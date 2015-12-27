@@ -6,7 +6,7 @@ const
 gulp.task('server', cb => {
 
     browserSync.instance = browserSync.init({
-        port: env.SERVER_PORT,
+        port: env.FAKE_BACKEDN.PORT,
         startPath: '/',
         server: {
             baseDir: config.paths.target._root

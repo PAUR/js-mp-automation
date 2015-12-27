@@ -1,3 +1,10 @@
 'use strict';
 
-gulp.task('target:build-watch', ['html', 'fonts', 'images', 'styles', 'watch']);
+const runSequence = require('run-sequence');
+
+gulp.task('target:build-watch', done => {
+
+    global.env.isWatch = true;
+
+    runSequence('target:build', 'watch', done);
+});

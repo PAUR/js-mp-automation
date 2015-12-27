@@ -2,6 +2,6 @@
 
 const runSequence = require('run-sequence');
 
-gulp.task('target:build-watch-serve', cb => {
-    runSequence('target:build-watch', 'server', cb);
+gulp.task('target:build-watch-serve', done => {
+    runSequence('target:build-watch', 'server', done);
 });
