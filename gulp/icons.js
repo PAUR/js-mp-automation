@@ -4,9 +4,9 @@ const
     spritesmith = require('gulp.spritesmith'),
     path = require('path');
 
-const imagesRoot = config.paths.www._root;
+const imagesRoot = config.paths.build._root;
 
-const imgPath = path.relative(imagesRoot, config.paths.www.icons)
+const imgPath = path.relative(imagesRoot, config.paths.build.icons)
     .replace(/\\/g, '/');
 
 gulp.task('icons', cb => {
@@ -19,7 +19,7 @@ gulp.task('icons', cb => {
     const spriteData = gulp.src(config.patterns.src.media.icons.all)
         .pipe(spritesmith({
             imgPath: imgPath,
-            imgName: config.paths.www.__layout.icons,
+            imgName: config.paths.build.__layout.icons,
             cssName: 'icons.scss',
             cssVarMap: sprite => {
                 sprite.name = 'icon_' + sprite.name.replace('@', '-');
@@ -28,7 +28,7 @@ gulp.task('icons', cb => {
 
     spriteData
         .img
-        .pipe(gulp.dest(config.paths.www._root))
+        .pipe(gulp.dest(config.paths.build._root))
         .on('end', () => onSubTaskDone('img'));
 
     spriteData

@@ -3,6 +3,6 @@
 gulp.task('fonts', () => {
 
     return gulp.src(config.patterns.src.media.fonts)
-        .pipe(gulp.dest(config.paths.www.fonts));
+        .pipe(gulp.dest(config.paths.build.fonts));
 
 });

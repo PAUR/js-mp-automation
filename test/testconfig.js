@@ -7,7 +7,7 @@ import chai from 'chai';
 import sinon from 'sinon';
 import sinonChai from 'sinon-chai';
 import sinonAsPromised from 'sinon-as-promised';
-import q from 'q';
+import {Promise} from 'q';
 
 
 global.env = null;
@@ -16,7 +16,7 @@ global.sinon = sinon;
 chai.should();
 
 chai.use(sinonChai);
-sinonAsPromised(q.Promise);
+sinonAsPromised(Promise);
 
 beforeEach(() => {
     global.env = sinon.sandbox.create();

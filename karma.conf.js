@@ -1,7 +1,8 @@
 'use strict';
 
 const
-    config = require('./config'),
+    env = require('./env'),
+    config = require('./config')(env),
     isparta = require("isparta"),
     istanbul = require('browserify-istanbul');
 

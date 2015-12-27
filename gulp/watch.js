@@ -1,9 +1,8 @@
 'use strict';
 
-const watch = require('gulp-watch'),
-    watchOptions = {debounceDelay: 1000};
+const watch = require('gulp-watch');
 
-gulp.task('watch', ['scripts:watch'], () => {
+gulp.task('watch', ['scripts:watch'], done => {
 
     watch(config.paths.src.index, startTask('html'));
     watch(config.patterns.src.templates, startTask('templates'));
@@ -11,6 +10,8 @@ gulp.task('watch', ['scripts:watch'], () => {
     watch(config.patterns.src.media.images, startTask('images'));
     watch(config.patterns.src.media.icons.all, startTask('icons'));
     watch(config.patterns.src.media.fonts, startTask('fonts'));
+
+    done();
 });
 
 function startTask(task) {

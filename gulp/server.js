@@ -6,10 +6,10 @@ const
 gulp.task('server', cb => {
 
     browserSync.instance = browserSync.init({
-        port: env.SERVER_PORT,
+        port: env.FAKE_BACKEND.PORT,
         startPath: '/',
         server: {
-            baseDir: config.paths.www._root
+            baseDir: config.paths.build._root
         }
     });
 

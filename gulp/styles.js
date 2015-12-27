@@ -17,13 +17,13 @@ gulp.task('styles:only', () => buildStyles());
 function buildStyles() {
     return gulp.src(config.patterns.src.styles.build, {base: config.paths.src.styles._root})
         .pipe(concat('app.scss'))
-        .pipe(gulpif(env.isDev, sourcemaps.init()))
+        .pipe(gulpif(env.isDev(), sourcemaps.init()))
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: ['last 2 versions', 'IE 9']
         }))
-        .pipe(gulpif(env.isRelease, minifyCss()))
-        .pipe(gulpif(env.isDev, sourcemaps.write('./maps')))
-        .pipe(gulp.dest(config.paths.www._root))
+        .pipe(gulpif(env.isRelease(), minifyCss()))
+        .pipe(gulpif(env.isDev(), sourcemaps.write('./maps')))
+        .pipe(gulp.dest(config.paths.build._root))
         .pipe(browserSync.reload({stream: true}));
 }
