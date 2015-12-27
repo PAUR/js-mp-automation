@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "npm run start:watch",
-    "start:watch": "gulp watch-serve",
+    "start:watch": "gulp target:build-watch-serve",
     "test": "karma start --singleRun --no-autoWatch --reporters dots,coverage",
     "test:watch": "karma start --no-singleRun --autoWatch --reporters progress",
     "watch": "npm-run-all -p *:watch"

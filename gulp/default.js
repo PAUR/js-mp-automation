@@ -1,3 +1,7 @@
 'use strict';
 
-gulp.task('default', ['build']);
+const runSequence = require('run-sequence');
+
+gulp.task('default', done => {
+    runSequence('target:build', 'target:release', done)
+});

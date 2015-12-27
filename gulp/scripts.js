@@ -17,16 +17,18 @@ const watchifyConfig = {
     fullPaths: false
 };
 
-let bundler = browserify(Object.assign({}, watchifyConfig, config.bundleConfig));
-bundler.transform('babelify');
+function createBundler() {
+    return browserify(Object.assign({}, watchifyConfig, config.bundleConfig))
+        .transform('babelify');
+}
 
 gulp.task('scripts', ['templates'], () => {
-    return bundle(bundler, config.bundleConfig);
+    return bundle(createBundler(), config.bundleConfig);
 });
 
 gulp.task('scripts:watch', ['templates'], () => {
 
-    bundler = watchify(bundler);
+    const bundler = watchify(createBundler());
 
     bundler.on('update', () => {
         bundleWatch(bundler);

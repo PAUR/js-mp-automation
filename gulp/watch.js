@@ -1,7 +1,6 @@
 'use strict';
 
-const watch = require('gulp-watch'),
-    watchOptions = {debounceDelay: 1000};
+const watch = require('gulp-watch');
 
 gulp.task('watch', ['scripts:watch'], () => {
 
