@@ -10,5 +10,5 @@ gulp.task('target:release', done => {
 
     global.config = require('../config')(global.env);
 
-    runSequence('compile', done);
+    runSequence('build', done);
 });

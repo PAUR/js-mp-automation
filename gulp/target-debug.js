@@ -2,7 +2,7 @@
 
 const runSequence = require('run-sequence');
 
-gulp.task('target:build', done => {
+gulp.task('target:debug', done => {
 
     Object.assign(global.env, {
         ENV: 'development'
@@ -10,5 +10,5 @@ gulp.task('target:build', done => {
 
     global.config = require('../config')(global.env);
 
-    runSequence('compile', done);
+    runSequence('build', done);
 });

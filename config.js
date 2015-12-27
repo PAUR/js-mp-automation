@@ -22,7 +22,7 @@ function buildConfig(env) {
             config: 'testconfig.js'
         },
         target: {
-            _root: `target/${env.isDev() ? 'build' : 'release'}`,
+            _root: `target/${env.isDev() ? 'debug' : 'release'}`,
             fonts: 'fonts',
             icons: 'icons.png',
             images: 'images'
