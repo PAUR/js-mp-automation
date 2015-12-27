@@ -1,6 +1,8 @@
 'use strict';
 
-const runSequence = require('run-sequence');
+const
+    runSequence = require('run-sequence'),
+    envLog = require('../env/log');
 
 gulp.task('build', done => {
 
@@ -9,6 +11,8 @@ gulp.task('build', done => {
     if (!env.isWatch) {
         buildTasks = buildTasks.concat('scripts')
     }
+
+    envLog(env);
 
     runSequence(buildTasks, done);
 });
