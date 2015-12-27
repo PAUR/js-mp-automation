@@ -9,7 +9,7 @@ gulp.task('server', cb => {
         port: env.SERVER_PORT,
         startPath: '/',
         server: {
-            baseDir: config.paths.www._root
+            baseDir: config.paths.target._root
         }
     });
 

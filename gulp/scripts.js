@@ -55,7 +55,7 @@ function bundle(bundler) {
         .pipe(buffer())
         .pipe(ngAnnotate());
 
-    if (env.isDev) {
+    if (env.isDev()) {
         bundleStream = bundleStream
             .pipe(sourcemaps.init({loadMaps: true}))
             .pipe(sourcemaps.write('./maps'));
