@@ -1,9 +1,9 @@
 const
     express = require('express'),
     path = require('path'),
-    config = require('./../config'),
-    env = require('./../env/index');
+    env = require('./../env'),
+    config = require('./../config')(env);
 
 express()
-    .use(express.static(path.join(__dirname, config.paths.target._root)))
-    .listen(env.SERVER_PORT, () => console.log(`Listening on ${env.FAKE_SERVER.PORT}`));
+    .use(express.static(path.join(__dirname, '..', config.paths.target._root)))
+    .listen(env.FAKE_BACKEND.PORT, console.log.bind(console, `Listening on ${env.FAKE_BACKEND.PORT}`));

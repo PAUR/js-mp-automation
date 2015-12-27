@@ -4,7 +4,8 @@
   "author": "Borys Ihnatyev",
   "version": "1.0.0",
   "scripts": {
-    "start": "npm run start:watch",
+    "postinstall": "gulp",
+    "start": "node fakeBackend",
     "start:watch": "gulp target:build-watch-serve",
     "test": "karma start --singleRun --no-autoWatch --reporters dots,coverage",
     "test:watch": "karma start --no-singleRun --autoWatch --reporters progress",

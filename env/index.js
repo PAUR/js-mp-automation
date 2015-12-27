@@ -14,8 +14,8 @@ const NODE_ENV = getEnv('NODE_ENV', DEV_ENV).toLowerCase();
 
 module.exports = {
     ENV: NODE_ENV, // development | * (tract as production otherwise)
-    FAKE_BACKEDN: {
-        PORT: getEnv.int('FAKE_SERVER_PORT', DEFAULT_SERVER_PORT)
+    FAKE_BACKEND: {
+        PORT: getEnv.int('PORT', DEFAULT_SERVER_PORT)
     },
     isDev() {
         return this.ENV === DEV_ENV
